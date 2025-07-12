@@ -1,0 +1,7 @@
+OrderID,Date,Customer,Region,Product,Quantity,Price,Discount,Profit
+1001,2023-01-02,Ali,Lahore,Laptop,2,80000,0.05,12000
+1002,2023-01-03,Sara,Karachi,Mobile,1,50000,,7000
+1003,2023-01-04,John,Islamabad,Tablet,3,30000,0.1,4500
+1004,2023-01-05,Ayesha,Lahore,Laptop,1,80000,,None
+1005,2023-01-06,Zain,Multan,Mobile,,50000,0.15,6000
+1006,2023-01-07,Ali,Lahore,Tablet,2,30000,0.05,4000
