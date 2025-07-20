@@ -81,6 +81,8 @@ PassengerId,Survived
 
 - ✅ **Public Score on Kaggle**: `0.75119` (75.12%)
 - Solid baseline performance without advanced feature engineering or tuning
+📘 [View Full Kaggle Notebook](https://www.kaggle.com/code/muhammadmaaz66/baseline-prediction-model-titanic)
+
 
 ---
 
