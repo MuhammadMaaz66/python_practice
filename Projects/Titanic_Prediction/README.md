@@ -1,96 +1,117 @@
-🛳️ Titanic - Machine Learning from Disaster
-This repository contains my solution to the Titanic: Machine Learning from Disaster competition on Kaggle. The goal is to build a predictive model that determines whether a passenger survived the Titanic shipwreck based on features such as age, sex, class, and fare.
+# 🛳️ Titanic - Machine Learning from Disaster
 
-📌 Competition Link
-Kaggle Titanic Competition
+This repository contains my solution to the **Titanic: Machine Learning from Disaster** competition on Kaggle. The goal is to build a predictive model that determines whether a passenger survived the Titanic shipwreck based on features such as age, sex, class, and fare.
 
-🎯 Objective
-Predict survival on the Titanic using passenger data (train.csv) and submit predictions (test.csv) in the required format.
+---
 
-Target Variable: Survived (0 = No, 1 = Yes)
+## 📌 Competition Link
+🔗 [Kaggle Titanic Competition](https://www.kaggle.com/competitions/titanic)
 
-Metric: Accuracy (percentage of correct predictions)
+---
 
-🗂️ Dataset Description
-train.csv: 891 samples with features and survival label.
+## 🎯 Objective
 
-test.csv: 418 samples with features, label to predict.
+Predict survival on the Titanic using passenger data (`train.csv`) and submit predictions (`test.csv`) in the required format.
 
-gender_submission.csv: Baseline submission (assumes all females survived).
+- **Target Variable**: `Survived` (0 = No, 1 = Yes)  
+- **Metric**: Accuracy (percentage of correct predictions)
 
-Key Features:
+---
 
-Feature	Description
-Pclass	Passenger class (1 = 1st, 2 = 2nd, 3 = 3rd)
-Sex	Gender (male/female)
-Age	Age in years
-SibSp	Number of siblings/spouses aboard
-Parch	Number of parents/children aboard
-Fare	Ticket fare
-Embarked	Port of Embarkation (C, Q, S)
+## 🗂️ Dataset Description
 
-🧪 Approach
-Data Preprocessing
+| File                    | Description                                                       |
+|-------------------------|-------------------------------------------------------------------|
+| `train.csv`             | 891 samples with features and survival label                      |
+| `test.csv`              | 418 samples with features; survival label to predict              |
+| `gender_submission.csv` | Baseline submission assuming all female passengers survived       |
 
-Missing value imputation:
+### Key Features
 
-Age: median
+| Feature    | Description                                                  |
+|------------|--------------------------------------------------------------|
+| `Pclass`   | Passenger class (1 = 1st, 2 = 2nd, 3 = 3rd)                   |
+| `Sex`      | Gender (male/female)                                         |
+| `Age`      | Age in years                                                 |
+| `SibSp`    | Number of siblings/spouses aboard the Titanic                |
+| `Parch`    | Number of parents/children aboard the Titanic                |
+| `Fare`     | Ticket fare                                                  |
+| `Embarked` | Port of Embarkation (C = Cherbourg, Q = Queenstown, S = Southampton) |
 
-Fare: median (test set)
+---
 
-Embarked: most frequent
+## 🧪 Approach
 
-Label Encoding for Sex and Embarked.
+### 🔧 Data Preprocessing
+- Imputed missing values:
+  - `Age`: median
+  - `Fare`: median (in test set)
+  - `Embarked`: most frequent
+- Applied label encoding for:
+  - `Sex`
+  - `Embarked`
 
-Feature Selection
+### 📊 Feature Selection
+Selected features:
+- `Pclass`
+- `Sex`
+- `Age`
+- `SibSp`
+- `Parch`
+- `Fare`
+- `Embarked`
 
-Selected features: Pclass, Sex, Age, SibSp, Parch, Fare, Embarked.
+### 🤖 Model
+- **Random Forest Classifier** from `scikit-learn`
+- Used default hyperparameters
+- Trained on the training set and predicted on the test set
 
-Model
-
-Random Forest Classifier with default hyperparameters.
-
-Trained on the training set and predicted on the test set.
-
-Submission
-
-Predictions exported to a CSV with format:
-
-python-repl
-Copy
-Edit
+### 📤 Submission Format
+CSV file containing:
 PassengerId,Survived
 892,0
 893,1
+894,0
 ...
-📈 Result
-Public Score on Kaggle: 0.75119 (75.12%)
 
-This baseline model performs better than the gender-based baseline (~0.76588) with no advanced tuning or feature engineering.
 
-🧰 Tech Stack
-Python
+---
 
-pandas
+## 📈 Result
 
-scikit-learn
+- ✅ **Public Score on Kaggle**: `0.75119` (75.12%)
+- Solid baseline performance without advanced feature engineering or tuning
 
-Jupyter Notebook / Kaggle Notebooks
+---
 
-🚀 Next Steps
-Feature engineering (e.g., Title from Name, Family Size)
+## 🧰 Tech Stack
 
-Hyperparameter tuning
+- Python  
+- pandas  
+- scikit-learn  
+- Jupyter Notebook / Kaggle Notebooks  
 
-Try other models like XGBoost or Logistic Regression
+---
 
-Ensemble methods
+## 🚀 Next Steps
 
-📁 Files
-File	Description
-titanic_baseline_model.ipynb	Full notebook with preprocessing, training, and submission steps
-submission.csv	Generated predictions file
-README.md	This documentation file
+- [ ] Feature engineering (e.g., extract `Title` from `Name`, create `FamilySize`)
+- [ ] Try other models (e.g., Logistic Regression, XGBoost)
+- [ ] Perform hyperparameter tuning (GridSearchCV or RandomizedSearchCV)
+- [ ] Use ensemble models (VotingClassifier, stacking)
 
-🤝 Acknowledgements
-Thanks to Kaggle and the Titanic competition team for providing this classic beginner-friendly machine learning challenge.
+---
+
+## 📁 Files
+
+| File                         | Description                                                  |
+|------------------------------|--------------------------------------------------------------|
+| `titanic_baseline_model.ipynb` | Jupyter Notebook with preprocessing, training, and submission |
+| `submission.csv`             | Prediction CSV for Kaggle submission                         |
+| `README.md`                  | This documentation file                                      |
+
+---
+
+## 🤝 Acknowledgements
+
+Thanks to Kaggle and the Titanic competition team for this classic beginner-friendly machine learning challenge.
