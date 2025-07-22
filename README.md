@@ -1,46 +1,62 @@
-# 🐍 Python Practice Repository
+# 🧠 python_practice — My ML-Powered Python Journey
 
-Welcome to my `python_practice` repository! This repo is a collection of Jupyter Notebooks created as part of my journey to become a professional Python developer. I push updates daily as I explore and practice Python fundamentals, problem-solving, and real-world use cases.
-
-## 📅 Daily Progress
-
-I am actively practicing and pushing new notebooks each day. You can find my daily commits under the `notebooks/` directory.
-
-## 🧠 What You'll Find
-
-- ✅ Python Basics: Syntax, variables, data types, loops, conditionals
-- 🧮 Data Structures: Lists, tuples, dictionaries, sets
-- 🔁 Loops & Functions: Writing reusable and efficient code
-- 🧩 Problem Solving: Exercises and challenges from platforms like LeetCode, HackerRank, etc.
-- 📊 Data Handling: Basic usage of `pandas`, `numpy`, and data visualization with `matplotlib` (upcoming)
-- ⚙️ Projects & Mini Scripts: Small real-world programs to test understanding
-
-## 🚀 Goals
-
-- Build a strong foundation in Python programming
-- Learn problem-solving using Python
-- Explore real-world applications: automation, data science, web development
-- Transition into professional Python development
-
-## 🛠️ Tools Used
-
-- Python 3.x
-- Jupyter Notebook
-- Git + GitHub
-- VS Code
-
-## 🌱 Future Topics (Coming Soon)
-
-- Object-Oriented Programming (OOP)
-- Web Scraping with BeautifulSoup & Requests
-- APIs and JSON handling
-- Flask / FastAPI basics
-- Data analysis projects
-
-## 🤝 Let's Connect
-
-Feel free to fork, star, or open issues for suggestions, corrections, or collaboration!
+Welcome to my `python_practice` repository! This is a living collection of **Jupyter Notebooks** documenting my journey toward becoming a **Machine Learning Engineer** and **Python Developer**. I update this repo frequently as I strengthen my core Python skills, tackle real-world problems, and build a strong foundation for advanced ML concepts.
 
 ---
 
-📌 **Note:** This is a practice repository. Code quality may improve over time as I learn and refactor.
+## 📅 Daily Progress
+
+I am actively learning and pushing new notebooks daily. Track my learning streak and notebooks under the `notebooks/` directory!
+
+---
+
+## 🔍 What You'll Find
+
+- 🐍 **Python Basics**: Syntax, variables, data types, loops, conditionals  
+- 🧮 **Core Data Structures**: Lists, tuples, dictionaries, sets  
+- 🔁 **Functions & Logic Building**: Writing efficient, reusable, and readable code  
+- 🎯 **Problem Solving**: Challenges from LeetCode, HackerRank, and other platforms  
+- 📊 **Data Handling**: Intro to `pandas`, `numpy`, `matplotlib`, and data wrangling techniques  
+- ⚙️ **Mini Projects & Scripts**: Automations, utilities, and beginner-friendly real-world problems  
+- 🤖 **Intro to ML** _(coming soon)_: Supervised/unsupervised learning basics, model training, and evaluation using `scikit-learn`
+
+---
+
+## 🚀 My Goals
+
+- Build a strong Python foundation for data science & ML  
+- Master problem-solving and algorithmic thinking using Python  
+- Apply Python in real-world use cases including data analysis & automation  
+- Transition into Machine Learning development and research  
+- Create a portfolio of beginner-to-intermediate ML projects
+
+---
+
+## 🛠️ Tools & Tech Stack
+
+- Python 3.x  
+- Jupyter Notebook  
+- Git + GitHub  
+- VS Code  
+- `pandas`, `numpy`, `matplotlib`, `scikit-learn` (ML stack coming soon)
+
+---
+
+## 🌱 Upcoming Topics
+
+- 📌 Object-Oriented Programming (OOP)  
+- 📌 Data preprocessing & feature engineering  
+- 📌 Regression & classification models  
+- 📌 Model evaluation metrics  
+- 📌 End-to-end ML mini projects  
+- 📌 Exploratory Data Analysis (EDA)
+
+---
+
+## 🤝 Let’s Connect!
+
+If you're on a similar path or just want to collaborate, feel free to **fork**, **star**, or open an **issue** for suggestions, corrections, or ideas!
+
+---
+
+📌 **Note**: This is a personal learning repository. Code and practices will evolve and improve as I continue learning.
